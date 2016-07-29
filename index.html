@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Countdown Timer</title>
+  <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Pacifico'>
+  <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700'>
+	<link rel='stylesheet' href='css/styles.css'>
+  <meta charset='utf-8'/>
+</head>
+
+<body>
+<h1><span class='shadow'>Timer</span></h1>
+<div id='timer'> 
+  <div class='break_section'>
+  <h2 class='timer_title'>Break Length</h2>
+
+  <div class='reset_time' id='break'>5</div>
+    <a class='button' id='break_minus'>-</a>
+    <a class='button' id='break_plus'>+</a>
+  </div>
+  
+  <div class='session_section'>
+    <h2 class='timer_title'>Session Length</h2>
+    <div class='reset_time' id='session'>25</div>
+    <a class='button' id='session_minus'>-</a>
+    <a class='button' id='session_plus'>+</a>
+  </div> 
+
+  <div class='clock'>
+    <div class='total_title'>Session</div>
+    <div class='total' id='total'>25</div>
+  </div>
+  <a class='reset' id='reset'>RESET</a>
+
+  <div class='message'>
+    <ul>
+      <li>To Start and Pause the clock, click inside the circle.</li>
+      <li>Click the Reset button to clear the Timer.</li>
+    </ul>
+  </div>
+</div>
+
+<script src='js/clock.js'></script>
+</body>
+</html>

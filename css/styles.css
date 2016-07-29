@@ -1,0 +1,136 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  width: 100%;
+	background-color: #7c7c7c;
+  font-family: 'Open sans', Sans-Serif, Arial;
+  color: #7575a3;
+  font-weight: bold;
+  text-align: center;
+  background-image:
+    linear-gradient(
+      360deg,
+      #92d2ff, 
+      #d6e9f6, 
+      #f2faff
+  );
+}
+
+.shadow { 
+  font: 100px 'Pacifico', cursive, Sans-Serif, Arial;
+  color: #f8d4f7;
+  text-shadow: 
+    2px 2px #e290df, 
+    3px 3px #e290df, 
+    4px 4px #e290df;
+  -webkit-transition: all 0.12s ease-out;
+  -moz-transition:    all 0.12s ease-out;
+  -ms-transition:     all 0.12s ease-out;
+  -o-transition:      all 0.12s ease-out;
+  animation: bounceIn 3s;
+}
+
+.shadow:hover {
+  position: relative; 
+  top: -3px; 
+  left: -5px; 
+  text-shadow: 
+    2px 2px #ec4ce6, 
+    3px 3px #ec4ce6, 
+    4px 4px #ec4ce6, 
+    5px 5px #ec4ce6, 
+    6px 6px #ec4ce6, 
+    7px 7px #ec4ce6;
+}
+
+.button {
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 40px;
+  color: #627582;
+  cursor: pointer;
+}
+
+.reset_time {
+  font-size: 50px;
+  color: #8ea3b2;
+}
+
+.timer_title {
+  font-size: 30px;
+  color: #627582;
+  text-transform: uppercase;
+}
+
+.clock {
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  border: 10px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 0 0px 2px #c1c1c1;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.clock:hover {
+  background-color: #e5eff6;
+  border: 20px solid #fff;
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+}
+
+.total_title {
+  margin: 40px 0px;
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  color: #627582;
+  text-shadow: 3px 3px #b9bedd;
+}
+
+.total {
+  font-size: 75px;
+  color: #8ea3b2;
+  cursor: pointer;
+}
+
+.total:hover {
+  color: #738a9a;
+}
+
+.reset {
+  font-size: 30px;
+  color: #445662;
+  cursor: pointer;
+}
+
+.message {
+  margin: 40px 0px 100px 0;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.message li {
+  list-style-type: circle;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
